@@ -1,0 +1,13 @@
+<div class="backgroundWrapper">
+    <app-inputfield (changeValue)="checkValue($event)"></app-inputfield>
+    <div class="wrapperButton">
+        <app-button [toggle]="toggleOne" (click)="handleOne()" [nameButton]="nameButtonOne"></app-button>
+        <app-button [toggle]="toggleMany" (click)="handleMany()" [nameButton]="nameButtonMany"></app-button>
+    </div>
+    <ng-content select=".ng-text"></ng-content>
+    <div class="wrapperDisplay">
+        <app-displayinfo [toggleOne]="toggleOne"></app-displayinfo>
+    </div>
+    <ng-content select="p"></ng-content>
+</div>
+

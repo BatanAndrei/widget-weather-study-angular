@@ -1,0 +1,25 @@
+<ng-container *ngTemplateOutlet='toggleOne ? templList : templOne'></ng-container>
+
+<ng-template #templList>
+    <div class="container">
+        @for (item of listData; track $index) {
+        <div class="items">
+            <h3 class="item">{{item.id}}.</h3>
+            <h3 class="item">{{item.date | date: 'M/d/yy'}}</h3>
+            <h3 class="item">{{item.temperature}}°С</h3>
+            <h3 class="item">{{item.dateWeek}}</h3>
+        </div>
+        }
+    </div>
+</ng-template>
+
+<ng-template #templOne>
+    <div class="container flex">
+        <div class="items">
+            <h3 class="item">{{listData[0].id}}.</h3>
+            <h3 class="item">{{listData[0].date | date: 'M/d/yy'}}</h3>
+            <h3 class="item">{{listData[0].temperature}}°С</h3>
+            <h3 class="item">{{listData[0].dateWeek}}</h3>
+        </div>
+    </div>
+</ng-template>

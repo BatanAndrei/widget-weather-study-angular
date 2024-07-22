@@ -1,0 +1,22 @@
+.container {
+    padding: 30px 7px 30px 7px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    .items {
+        width: 90px;
+        height: 90px;
+        border-radius: 10px;
+        border: 1px solid;
+
+        .item {
+            margin: 0px;
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
