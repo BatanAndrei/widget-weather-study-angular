@@ -1,3 +1,13 @@
+# Изучил:
+
+## 1. Компоненты
+## 2. Пайпы
+## 3. События
+## 4. Взаимодействия между копмонентами
+## 5. Элементы ng-content, ng-template, ng-container
+## 6. Структурные дерективы *ngIf, *ngFor, *ngSwitchCase
+## 7. Атрибутные дерективы ngClass, ngStyle
+
 # WidgetWeatherStudyAngular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
